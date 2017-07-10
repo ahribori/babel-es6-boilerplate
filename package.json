@@ -1,0 +1,19 @@
+{
+  "name": "ahribori_agent",
+  "version": "1.0.0",
+  "description": "ahribori's web robot",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node ./build/app.js",
+    "boot": "cross-env NODE_ENV=production node ./build/app.js",
+    "dev": "cross-env NODE_ENV=development nodemon --exec babel-node src/index.js --watch src",
+    "build": "babel src --out-dir build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "cross-env": "^5.0.1"
+  }
+}
